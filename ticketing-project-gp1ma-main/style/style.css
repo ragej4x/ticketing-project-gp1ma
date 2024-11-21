@@ -1,0 +1,32 @@
+
+body {
+    font-family:'Courier New', Courier, monospace, sans-serif;
+    background: linear-gradient(#234a91, #912077);
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+}
+
+h2 {
+    color: #394867;
+}
+
+.btn-primary {
+    background-color: #394867;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #212A3E;
+}
+
