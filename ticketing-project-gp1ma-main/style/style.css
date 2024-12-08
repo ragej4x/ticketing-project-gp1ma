@@ -1,0 +1,140 @@
+html{
+    background: linear-gradient(#222629,#2d383f );
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+body {
+    font-family:'Courier New', Courier, monospace, sans-serif;
+    color: #fff;
+    
+  
+}
+
+.container {
+    
+    position: absolute;
+    max-width: max-content;
+    margin-top: 150px;
+    margin-left: 30%;
+    margin-right: 30%;
+    right: 15%;
+    
+}
+ 
+ 
+.card {
+    border-radius: 12px;
+    
+    width: 200%;
+    height: 355px;
+    padding: 20px;
+    background-color: #474b4f;
+    position: relative;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card::after,  .card::before{
+    
+    content: '';
+    position: absolute;
+    height: 110%;
+    width: 105%;
+    background-image: conic-gradient(from var(--angle), transparent 50%, rgb(97, 137, 47) );
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 12px;
+    border-radius: 12px;
+    animation: 3s spin linear infinite;
+}
+.card::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from{
+       --angle: 0deg;
+    }
+    to{
+       --angle: 360deg;
+    }
+}
+
+h2 {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: rgb(134, 194, 50);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color:rgb(97, 137, 47) ;
+}
+
+nav{
+    background: #474b4f;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #474b4f;
+}
+
+.top-bar span{
+    color: #fff;
+}
+
+.top-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.top-bar li {
+    margin: 0px 5px;
+}
+
+.top-bar a {
+    color: #fff;
+}
+
+.top-bar a:hover{
+    color: #222629;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img{ 
+    width: 40px;
+    margin-right: 10px;
+    height: 40px;
+   
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.logo a:hover {
+    color: #fff;
+}
