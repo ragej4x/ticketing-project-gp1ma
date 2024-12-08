@@ -33,7 +33,7 @@ $tickets = $conn->query("SELECT movies.title, showtimes.show_date, showtimes.sho
 <body>
 <div class="container">
     <div class="card">
-        <h2 class="text-center">My Tickets</h2>
+        <h2 class="text-center">You have been verified!</h2>
         <?php if ($tickets->num_rows > 0): ?>
             <ul class="list-group mb-3">
                 <?php while ($ticket = $tickets->fetch_assoc()): ?>
@@ -45,7 +45,7 @@ $tickets = $conn->query("SELECT movies.title, showtimes.show_date, showtimes.sho
             </ul>
         <?php else: ?>
             
-            <p class="text-center">Hi edit mo nlng ano gusto mo lagay dto filename > (index.php) in line 48</p>
+            <p class="text-center">Welcome our new VIEKET user.     </p>
         <?php endif; ?>
         <a href="movies.php" class="btn btn-primary w-100">Book a Ticket</a>
         <a href="logout.php" class="btn btn-secondary w-100 mt-2">Logout</a>

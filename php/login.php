@@ -35,6 +35,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" href="1And.css">
+    
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="../style/style.css">
+    
+    <link rel="stylesheet" href="../style/style.css">
+
+</head>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="../style/style.css">
@@ -43,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="container">
 
     <div class="card">
-        <h2 class="text-center">Welcome Back!</h2>
+        <h2 class="text-center">Welcome!</h2>
 
         <?php if (isset($error)): ?>
             <div class="alert alert-danger"><?php echo $error; ?></div>
@@ -67,4 +77,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </div>
 </body>
+    <head>
+
+    <link rel="stylesheet" href="../style/style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    </head>
+    <body>
+
+   
+             <div class="top-bar">
+             <div class="logo">
+       <a href="#"><img src="../images/vieketlogo.jpg" alt="logo">VIEKET</a>
+        </div>
+                
+                <ul>
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+             </div>
+      
+       
+</body>
 </html>
+
+
+ 
+  

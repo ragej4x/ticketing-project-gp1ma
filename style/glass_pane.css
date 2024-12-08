@@ -1,18 +1,21 @@
 
 .card-glass, .card {
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(#222629,#2d383f );
     backdrop-filter: blur(10px);
     padding: 1rem;
     border-radius: 8px;
     color: white;
     margin: 1rem;
+    margin-right: -15%;
+    margin-left: 18%;
     border: 1px solid rgba(255, 255, 255, 0.2);
     width: 250px; 
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
+
 
 
 .movie-image {
@@ -31,4 +34,9 @@
     width: 100%; 
     height: auto; 
     margin-top: 10px;
+}
+
+.text-white{
+    margin-left: 10%;
+    font-size: 50px;
 }
